@@ -1,0 +1,150 @@
+/* src/CreateSection.css */
+.create-section {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    background: rgb(2, 2, 2);
+    position: relative;
+    z-index: 999;
+    background-image: url(../../../public/imges/PNG/Background2.png);
+    background-repeat: none;
+    background-size: cover;
+    /* background: ; */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.settings-button {
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 9px;
+}
+
+.content {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.content h2 {
+    text-align: left;
+    color: white;
+    font-size: 25px
+}
+
+
+.creation-options,
+.ads-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.option {
+    flex: 1;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 20px 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    max-width: 160px;
+    min-width: 108px;
+}
+
+.ads-option {
+    flex: 1;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px 7px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    max-width: 100px;
+}
+
+.option a {
+    text-align: left;
+    display: block;
+    width: 100%;
+    padding-left: 18px;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+.ads-option a {
+    text-align: center;
+    display: block;
+    width: 100%;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+.option span {
+    font-size: 12px;
+    text-align: left;
+    padding-left: 18px;
+    display: block;
+}
+
+.icon {
+    font-size: 2em;
+}
+
+
+@media screen and (max-width: 425px) {
+    .create-section {
+        width: 100%;
+        max-width: 1200px;
+        height: 100%;
+        background: rgb(37, 37, 37);
+        position: relative;
+        z-index: 999;
+        background-image: url(../../../public/imges/PNG/home_bg.png);
+        background-repeat: none;
+        background-size: cover;
+        /* background: ; */
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .option {
+        flex: 1;
+        /* margin: 10px; */
+        border: 1px solid black;
+        /* padding: 10px 5px; */
+        /* background: #000; */
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        max-width: 160px;
+        min-width: 108px;
+    }
+    .option a {
+        /* text-align: left; */
+        font-weight: 500;
+        display: block;
+        font-size: 15px;
+        width: 100%;
+        /* padding-left: 18px; */
+        /* justify-content: center; */
+        text-decoration: none;
+        color: black;
+    }
+}

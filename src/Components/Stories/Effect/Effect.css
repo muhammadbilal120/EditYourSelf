@@ -1,0 +1,171 @@
+.nav-effect-btn {
+  background: transparent;
+  width: 10%;
+  border: none;
+  font-size: 30px;
+  border-radius: 60px;
+  cursor: pointer;
+}
+
+.EffectGrid {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  cursor: pointer;
+  padding-bottom: 50px;
+  margin: 50px 0px;
+  white-space: nowrap;
+}
+
+.EffectGrid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.EffectGrid::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #95a5a6;
+  border: 1px solid #cacaca;
+}
+
+.EffectGrid::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: #2c3e50;
+}
+
+.filter-img {
+  object-fit: cover;
+  width: 100px;
+  border-radius: 50%;
+  height: 100px;
+  margin: 10px 20px;
+}
+
+.Controls-effect {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 20px; */
+  background-color: #000;
+}
+
+.Controls-effect .separator {
+  width: 2px;
+  height: 60px;
+  background-color: #ffffff;
+  margin: 0 10px;
+}
+
+.Control-effect {
+  text-align: center;
+  color: white;
+}
+
+.icon-wrapper-effect {
+  background-color: #333;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon-wrapper-effect img {
+  width: 24px;
+  height: 24px;
+}
+
+.effect-bottom-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.effect-bottom-btn a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.buttons {
+  display: inline-block;
+  border-radius: 7px;
+  border: none;
+  background: #1875FF;
+  color: white;
+  font-family: inherit;
+  text-align: center;
+  font-size: 13px;
+  /* box-shadow: 0px 14px 16px -11px #1875FF; */
+  width: 10em;
+  text-align: center;
+  justify-content: center;
+  margin-left: 43%;
+  padding: 1em;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.buttons span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+
+.buttons span:after {
+  content: 'for free';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.7s;
+}
+
+.buttons:hover span {
+  padding-right: 3.95em;
+}
+
+.buttons:hover span:after {
+  opacity: 4;
+  right: 0;
+}
+
+@media only screen and (max-width: 1440px) {
+  .buttons {
+    margin-left: 41%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .buttons {
+    margin-left: 38%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .buttons {
+    margin-left: 33%;
+  }
+
+  .filter-img {
+    margin: 5px 10px;
+  }
+
+  .filter-img {
+    object-fit: cover;
+    width: 80px;
+    border-radius: 50%;
+    height: 80px;
+    margin: 1px 10px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .buttons {
+    margin-left: 30%;
+  }
+}

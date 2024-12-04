@@ -1,0 +1,86 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 55%;
+    border-radius: 10px;
+    padding: 30px 20px;
+    background: #000;
+    margin: auto;
+}
+.header-btn{
+    top: 4%;
+    padding-left: 20px;
+    padding-top: 7px;
+    padding-right: 12px;
+    padding-bottom: 14px;
+    left: 6%;
+}
+.nav-btn{
+    background: transparent;
+      width: 0%;
+      border: none;
+      font-size: 30px;
+      border-radius: 60px;
+      cursor: pointer;
+  }
+
+.mediapic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.header-btn{
+    position: absolute;
+    top: 8%;
+    padding-left: 30px;
+    padding-top: 14px;
+    padding-right: 21px;
+    padding-bottom: 21px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 30px;
+    left: 27%;
+}
+/* 
+.Input-Font-Name {
+    width: 70%;
+} */
+
+
+@media only screen and (max-width: 1024px) {
+    .Container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 75%;
+        border-radius: 10px;
+        /* padding: 30px 20px; */
+        background: #000;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .Container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        background: #000;
+        margin: 0px;
+        margin: auto;
+    }
+    .header-btn{
+        top: 4%;
+        padding-left: 20px;
+        padding-top: 7px;
+        padding-right: 12px;
+        padding-bottom: 14px;
+        left: 6%;
+    }
+    .nav-btn{
+        font-size: 20px;
+    }
+}
